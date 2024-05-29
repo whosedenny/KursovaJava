@@ -101,7 +101,7 @@ public class HotelController {
     )
     @GetMapping("/hotel-by-city/{city}")
     public List<Hotel> GetHotelsByCity(@PathVariable String city){
-        return null;
+        return service.GetHotelsByCity(city);
     }
     @Operation(
             description = "Searching hotel in dataBase by hotels count stars",
