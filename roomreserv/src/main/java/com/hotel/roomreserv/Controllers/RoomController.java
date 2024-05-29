@@ -84,7 +84,7 @@ public class RoomController {
                     )
             }
     )
-    @GetMapping("/rooms-by-hotel")
+    @PostMapping("/rooms-by-hotel")
     public List<Room> GetRoomsByHotel(@RequestBody Hotel hotel){
         return service.GetRoomsByHotel(hotel);
     }
